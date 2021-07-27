@@ -36,6 +36,7 @@
         </div>
     </div>
     <div>
+       <div class="container">
         @foreach ($vistas as $producto)
             <div id="myTabContent" class="tab-content">
                 <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
@@ -115,6 +116,7 @@
             </div>
         @endforeach
     </div>
+</div>  
 </div>
 </div>
 </div>

@@ -17,10 +17,10 @@
             <!-- Menú -->
             <div class="collapse navbar-collapse justify-content-center" id="bs-megadropdown-tabs">
                 <ul class="nav navbar-nav justify-center">
-                    <li class="active"><a href="../public/" class="act">Inicio</a></li>	
-                    <li><a href="vistas/">Nueva Colección</a></li>
+                    <li class="active"><a href="/" class="act">Inicio</a></li>	
+                    <li><a href="/vistas">Nueva Colección</a></li>
                     <li><a href="#about">Acerca de</a></li>
-                    <li><a href="contactos/">Contacto</a></li>
+                    <li><a href="/contactos">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,7 +62,7 @@
         <div id="camisas" class="col-md-7 wthree_banner_bottom_right items-center">
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="vistas/">Nueva Colección</a></li>
+                    <li role="presentation" class="active"><a href="/vistas">Nueva Colección</a></li>
                 </ul>
             </div>
         </div>

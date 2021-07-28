@@ -12,7 +12,7 @@
     @method('PUT')
    <div class="mb-3">
        <label for="" class="form-label">Nombre del Producto</label>
-       <input id="nombre" name="nombre" type="text" class="form-control" value="{{ $producto->nombre }}" required>
+       <input id="nombre" name="nombre" type="text" class="form-control" value="{{ $producto->nombre }}" minlength="1" maxlength="100" required>
    </div>
    <div class="mb-3">
        <label for="imagen" class="form-label">Imagen</label>
@@ -25,7 +25,7 @@
    </div>
    <div class="mb-3">
        <label for="" class="form-label">Descripción</label>
-       <input id="descripcion" name="descripcion" type="text" class="form-control" value="{{ $producto->descripcion }}" required>
+       <input id="descripcion" name="descripcion" type="text" class="form-control" value="{{ $producto->descripcion }}" minlength="5" maxlength="500" required>
    </div>
    <div class="mb-3">
        <label for="" class="form-label">Precio</label>

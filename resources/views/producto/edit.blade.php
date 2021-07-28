@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-<form action="../../productos/{{ $producto->id }}" method="POST" enctype="multipart/form-data" required>
+<form action="/productos/{{ $producto->id }}" method="POST" enctype="multipart/form-data" required>
     {{csrf_field()}}
     @method('PUT')
    <div class="mb-3">
@@ -31,7 +31,7 @@
        <label for="" class="form-label">Precio</label>
        <input id="precio" name="precio" type="number" step="any" class="form-control" value="{{ $producto->precio }}" required>
    </div>
-   <a href="../../productos/" class="btn btn-secondary">Cancelar</a>
+   <a href="/productos" class="btn btn-secondary">Cancelar</a>
    <button type="submit" class="btn btn-primary">Guardar</button>
    <br>
    <br>

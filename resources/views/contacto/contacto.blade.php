@@ -40,10 +40,10 @@
 					<h4>Comunícate con nosotros</h4>
 					<form action="/contactos" method="POST">
 						{{csrf_field()}}
-						<input type="text" id="nombre" name="nombre" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre*';}" required>
-						<input type="email" id="correo" name="correo" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required>
-						<input type="text" id="telefono" name="telefono" value="Teléfono*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono*';}" required>
-						<textarea id="mensaje" name="mensaje" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje...';}" required>Mensaje...</textarea>
+						<input type="text" id="nombre" name="nombre" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre*';}" minlength="4" maxlength="100" required>
+						<input type="email" id="correo" name="correo" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" maxlength="255" required>
+						<input type="text" id="telefono" name="telefono" value="Teléfono*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono*';}" minlength="8" maxlength="12" required>
+						<textarea id="mensaje" name="mensaje" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje...';}" minlength="5" maxlength="500" required>Mensaje...</textarea>
 						<input type="submit" value="Enviar" >
 					</form>
 				</div>

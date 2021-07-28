@@ -29,7 +29,7 @@
                 <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                     <ul id="myTab" class="nav nav-tabs" role="tablist">
                         <br>
-                        <li role="presentation" class="active"><a href="vistas/">Nueva Colección</a></li>
+                        <li role="presentation" class="active"><a href="/vistas">Nueva Colección</a></li>
                     </ul>
                 </div>
             </div>

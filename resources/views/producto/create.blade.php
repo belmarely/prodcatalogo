@@ -8,7 +8,7 @@
 
 @section('content')
 
-<form action="/prodcatalogo/public/productos" method="POST" enctype="multipart/form-data">
+<form action="/productos" method="POST" enctype="multipart/form-data">
      {{csrf_field()}}
     <div class="mb-3">
         <label for="" class="form-label">Nombre del Producto</label>
@@ -30,7 +30,7 @@
         <label for="" class="form-label">Precio</label>
         <input id="precio" name="precio" type="number" step="any" value="0.00" class="form-control" tabindex="4" required>
     </div>
-    <a href="public/../../productos/" class="btn btn-secondary" tabindex="6">Cancelar</a>
+    <a href="/productos" class="btn btn-secondary" tabindex="6">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
 </form>
 @stop

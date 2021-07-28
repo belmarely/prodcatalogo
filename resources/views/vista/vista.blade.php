@@ -16,8 +16,8 @@
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="../public/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
-				<li><a href="contactos/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contáctanos</a> <i>/</i></li>
+				<li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
+				<li><a href="/contactos"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contáctanos</a> <i>/</i></li>
 			</ul>
 		</div>
 	</div>

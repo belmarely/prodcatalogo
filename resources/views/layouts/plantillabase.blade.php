@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="{{ route('login') }}" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
             </div>
             <div class="w3l_logo">
-                <h1><a href="vistas/">Women´s Fashion<span>For Fashion Lovers</span></a></h1>
+                <h1><a href="/">Women´s Fashion<span>For Fashion Lovers</span></a></h1>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 w3_footer_grid">
                         <h3>Categoria</h3>
                         <ul class="info"> 
-                            <li><a href="vistas/">Nueva Colección</a></li>
+                            <li><a href="/vistas">Nueva Colección</a></li>
                             <li><a href="#camisas">Top</a></li>
                             <li><a href="#camisas">Blusas</a></li>
                             <li><a href="#camisas">Camisetas</a></li>

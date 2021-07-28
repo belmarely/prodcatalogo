@@ -59,7 +59,7 @@ class ProductoController extends Controller
         }
         $productos->save();
 
-        return redirect('http://localhost/prodcatalogo/public/productos');
+        return redirect()->action('App\Http\Controllers\ProductoController@index');
     }
 
     /**
@@ -113,8 +113,8 @@ class ProductoController extends Controller
         }
        
         $producto->save();
+        return redirect()->action('App\Http\Controllers\ProductoController@index');
 
-        return redirect('http://localhost/prodcatalogo/public/productos');
     }
 
     /**
@@ -127,6 +127,6 @@ class ProductoController extends Controller
     {
         $contacto = Contacto::find($id);
         $contacto->delete();
-        return redirect('http://localhost/prodcatalogo/public/productos/contacto');
+        return redirect()->back();
     }
 }

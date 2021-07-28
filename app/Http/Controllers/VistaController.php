@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Producto;
+use App\Models\Contacto;
 
 class VistaController extends Controller
 {
@@ -25,7 +26,7 @@ class VistaController extends Controller
      */
     public function create()
     {
-        //
+        return view('contacto.contacto');
     }
 
     /**
@@ -36,7 +37,15 @@ class VistaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contactos = new Contacto();
+        $contactos->nombre = $request->get('nombre');
+        $contactos->correo = $request->get('correo');
+        $contactos->telefono = $request->get('telefono');
+        $contactos->mensaje = $request->get('mensaje');
+        
+        $contactos->save();
+
+        return redirect('')->action('App\Http\Controllers\VistaController@show');
     }
 
     /**

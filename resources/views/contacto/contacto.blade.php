@@ -15,7 +15,7 @@
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="http://localhost/prodcatalogo/public/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
+				<li><a href="../public/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
 				<li>Contáctanos</li>
 			</ul>
 		</div>
@@ -38,12 +38,12 @@
 				</div>
 				<div class="col-md-7 contact-left">
 					<h4>Comunícate con nosotros</h4>
-					<form action="/contactos" method="POST">
+					<form action="public/../contactos" method="POST">
 						{{csrf_field()}}
-						<input type="text" id="nombre" name="nombre" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre*';}" required="">
-						<input type="email" id="correo" name="correo" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required="">
-						<input type="text" id="telefono" name="telefono" value="Teléfono*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono*';}" required="">
-						<textarea id="mensaje" name="mensaje" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje...';}" required="">Mensaje...</textarea>
+						<input type="text" id="nombre" name="nombre" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre*';}" required>
+						<input type="email" id="correo" name="correo" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required>
+						<input type="text" id="telefono" name="telefono" value="Teléfono*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono*';}" required>
+						<textarea id="mensaje" name="mensaje" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje...';}" required>Mensaje...</textarea>
 						<input type="submit" value="Enviar" >
 					</form>
 				</div>

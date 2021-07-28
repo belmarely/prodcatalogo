@@ -56,8 +56,7 @@ class ContactoController extends Controller
      */
     public function show()
     {
-        $prenda = Producto::all();
-        return view('contacto.prenda')->with('contactos', $prenda);
+        
     }
 
     /**

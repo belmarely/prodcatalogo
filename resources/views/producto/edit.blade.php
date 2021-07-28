@@ -7,17 +7,17 @@
 @stop
 
 @section('content')
-<form action="http://localhost/prodcatalogo/public/productos/{{ $producto->id }}" method="POST" enctype="multipart/form-data">
+<form action="../../productos/{{ $producto->id }}" method="POST" enctype="multipart/form-data" required>
     {{csrf_field()}}
     @method('PUT')
    <div class="mb-3">
        <label for="" class="form-label">Nombre del Producto</label>
-       <input id="nombre" name="nombre" type="text" class="form-control" value="{{ $producto->nombre }}">
+       <input id="nombre" name="nombre" type="text" class="form-control" value="{{ $producto->nombre }}" required>
    </div>
    <div class="mb-3">
        <label for="imagen" class="form-label">Imagen</label>
        <input id="imagen" name="imagen" type="file" class="form-control" value="{{ $producto->imagen }}">
-       <img src="{{ asset($producto->imagen) }}" class="img-fluid img-thumbnail" width="100" alt="{{ $producto->imagen }}">
+       <img src="{{ asset($producto->imagen) }}" class="img-fluid img-thumbnail" width="100" alt="{{ $producto->imagen }}" required>
        <br>
        @error('imagen')
            <small class="text-danger">{{$message}}</small>
@@ -25,13 +25,13 @@
    </div>
    <div class="mb-3">
        <label for="" class="form-label">Descripción</label>
-       <input id="descripcion" name="descripcion" type="text" class="form-control" value="{{ $producto->descripcion }}">
+       <input id="descripcion" name="descripcion" type="text" class="form-control" value="{{ $producto->descripcion }}" required>
    </div>
    <div class="mb-3">
        <label for="" class="form-label">Precio</label>
-       <input id="precio" name="precio" type="number" step="any" class="form-control" value="{{ $producto->precio }}">
+       <input id="precio" name="precio" type="number" step="any" class="form-control" value="{{ $producto->precio }}" required>
    </div>
-   <a href="http://localhost/prodcatalogo/public/productos" class="btn btn-secondary">Cancelar</a>
+   <a href="../../productos/" class="btn btn-secondary">Cancelar</a>
    <button type="submit" class="btn btn-primary">Guardar</button>
    <br>
    <br>

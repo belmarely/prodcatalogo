@@ -15,7 +15,7 @@
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="../public/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
+				<li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a> <i>/</i></li>
 				<li>Contáctanos</li>
 			</ul>
 		</div>
@@ -38,7 +38,7 @@
 				</div>
 				<div class="col-md-7 contact-left">
 					<h4>Comunícate con nosotros</h4>
-					<form action="public/../contactos" method="POST">
+					<form action="/contactos" method="POST">
 						{{csrf_field()}}
 						<input type="text" id="nombre" name="nombre" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre*';}" required>
 						<input type="email" id="correo" name="correo" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required>
